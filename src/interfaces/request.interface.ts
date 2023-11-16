@@ -1,5 +1,5 @@
+import requestMethod from "@/constants/types/requestMethod.type";
 import mongoose from "mongoose";
-import requestMethod from "../constants/types/requestMethod.type";
 
 export default interface RequestInterface {
   projectId: mongoose.Types.ObjectId;

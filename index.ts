@@ -1,7 +1,8 @@
+import "module-alias/register";
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import UserRouter from "./src/routes/user.route";
+import UserRouter from "@/routes/user.route";
 
 dotenv.config();
 

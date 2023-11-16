@@ -1,5 +1,5 @@
+import { UserModel } from "@/models";
 import mongoose from "mongoose";
-import { UserModel } from "../models/index";
 
 const getUserById = async (id: string) => {
   const pipeline = userAggregationPipeline(id);
