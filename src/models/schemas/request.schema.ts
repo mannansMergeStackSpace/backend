@@ -1,6 +1,6 @@
-import mongoose, { Schema } from "mongoose";
-import AppModelsEnum from "../../constants/enums/models.enum";
-import RequestInterface from "../../interfaces/request.interface";
+import AppModelsEnum from "@/constants/enums/models.enum";
+import RequestInterface from "@/interfaces/request.interface";
+import { Schema } from "mongoose";
 
 const RequestSchema = new Schema<RequestInterface>(
   {

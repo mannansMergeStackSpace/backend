@@ -1,9 +1,9 @@
+import AppModelsEnum from "@/constants/enums/models.enum";
+import PlanInterface from "@/interfaces/plan.interface";
+import ProjectInterface from "@/interfaces/project.interface";
+import RequestInterface from "@/interfaces/request.interface";
+import UserInterface from "@/interfaces/user.interface";
 import { model } from "mongoose";
-import AppModelsEnum from "../constants/enums/models.enum";
-import PlanInterface from "../interfaces/plan.interface";
-import ProjectInterface from "../interfaces/project.interface";
-import RequestInterface from "../interfaces/request.interface";
-import UserInterface from "../interfaces/user.interface";
 import PlanSchema from "./schemas/plan.schema";
 import ProjectSchema from "./schemas/project.schema";
 import RequestSchema from "./schemas/request.schema";

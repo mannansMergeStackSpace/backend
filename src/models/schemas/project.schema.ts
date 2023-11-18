@@ -1,6 +1,6 @@
+import AppModelsEnum from "@/constants/enums/models.enum";
+import ProjectInterface from "@/interfaces/project.interface";
 import { Schema } from "mongoose";
-import AppModelsEnum from "../../constants/enums/models.enum";
-import ProjectInterface from "../../interfaces/project.interface";
 
 const ProjectSchema = new Schema<ProjectInterface>(
   {
