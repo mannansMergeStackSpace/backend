@@ -8,6 +8,7 @@ const PlanSchema = new Schema<PlanInterface>(
     maximumProjects: Number,
     maximumUsers: Number,
     requestsPerMonth: Number,
+    price: Number,
   },
   { timestamps: true }
 );

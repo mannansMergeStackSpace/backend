@@ -3,6 +3,7 @@ enum AppModelsEnum {
   PLAN = "Plan",
   REQUEST = "Request",
   PROJECT = "Project",
+  CONTRIBUTOR = "Contributor",
 }
 
 export default AppModelsEnum;
