@@ -5,9 +5,9 @@
     "moduleResolution": "node",
     "outDir": "dist",
     "lib": ["dom", "es6"],
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src/*"]
     },
     "skipLibCheck": true,
     "esModuleInterop": true
