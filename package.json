@@ -7,11 +7,18 @@
     "@": "dist/src"
   },
   "scripts": {
+    "start": "nodemon index.ts",
+    "build": "rimraf dist && tsc",
+    "ts.check": "tsc — project tsconfig.json",
+    "add-build": "git add dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tsc",
-    "start": "npx tsc && nodemon dist/index.js",
     "dev": "npx tsc && concurrently \"npx tsc --watch\" \"nodemon -q index.ts\""
   },
+  "pre-commit": [
+    "ts.check",
+    "build",
+    "add-build"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -21,6 +28,8 @@
     "express": "^4.18.2",
     "module-alias": "^2.2.3",
     "mongoose": "^8.0.0",
+    "pre-commit": "^1.2.2",
+    "rimraf": "^5.0.5",
     "ts-node": "^10.9.1"
   },
   "devDependencies": {

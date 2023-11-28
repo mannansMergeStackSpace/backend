@@ -3,9 +3,9 @@
     "module": "commonjs",
     "target": "esnext",
     "moduleResolution": "node",
-    "outDir": "./dist",
+    "outDir": "dist",
     "lib": ["dom", "es6"],
-    "baseUrl": "./src",
+    "baseUrl": "src",
     "paths": {
       "@/*": ["./*"]
     },
