@@ -37,3 +37,5 @@ db.once("open", () => {
     );
   });
 });
+
+export default app;
