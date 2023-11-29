@@ -9,8 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
-    "start": "ts-node dist/index.js",
-    "dev": "npx tsc && concurrently \"npx tsc --watch\" \"nodemon -q index.ts\""
+    "start": "ts-node index.ts",
+    "dev": "npx tsc && concurrently \"npx tsc --watch\" \"nodemon -q index.ts\"",
+    "vercel-build": "echo hello world"
   },
   "keywords": [],
   "author": "",

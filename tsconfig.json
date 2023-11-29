@@ -3,16 +3,16 @@
     "module": "commonjs",
     "target": "esnext",
     "moduleResolution": "node",
-    "outDir": "./dist",
+    "outDir": "dist",
     "lib": ["dom", "es6"],
-    "baseUrl": "./src",
+    "baseUrl": "",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src/*"]
     },
     "skipLibCheck": true,
     "esModuleInterop": true
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["src/**/*.ts", "tests/**/*.spec.ts", "/index.ts"],
+  "include": ["./api/*.ts", "./*.js", "src/**/*.ts", "tests/**/*.spec.ts"],
   "files": ["index.ts"]
 }
