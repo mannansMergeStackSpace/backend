@@ -13,6 +13,6 @@
     "esModuleInterop": true
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["./api/*.ts", "./*.js", "src/**/*.ts", "tests/**/*.spec.ts"],
-  "files": ["index.ts"]
+  "include": ["src/**/*.ts", "tests/**/*.spec.ts"],
+  "files": ["src/index.ts"]
 }

@@ -6,7 +6,7 @@ import UserRouter from "@/routes/user.route";
 
 const cors = require("cors");
 const corsOptions = {
-  origin: "http://localhost:3005", // Replace with your allowed origin
+  origin: "*", // Replace with your allowed origin
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true, // Include cookies
   optionsSuccessStatus: 204, // Respond with a 204 status for preflight requests
@@ -37,5 +37,3 @@ db.once("open", () => {
     );
   });
 });
-
-export default app;
