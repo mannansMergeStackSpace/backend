@@ -4,6 +4,7 @@ enum AppModelsEnum {
   REQUEST = "Request",
   PROJECT = "Project",
   CONTRIBUTOR = "Contributor",
+  MAP = "Map",
 }
 
 export default AppModelsEnum;

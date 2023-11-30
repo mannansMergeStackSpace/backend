@@ -1,11 +1,13 @@
 import AppModelsEnum from "@/constants/enums/models.enum";
 import ContributorInterface from "@/interfaces/contributor.interface";
+import { MapInterface } from "@/interfaces/map.interface";
 import PlanInterface from "@/interfaces/plan.interface";
 import ProjectInterface from "@/interfaces/project.interface";
 import RequestInterface from "@/interfaces/request.interface";
 import UserInterface from "@/interfaces/user.interface";
 import { model } from "mongoose";
 import ContributorSchema from "./schemas/contributor.schema";
+import MapSchema from "./schemas/map.schema";
 import PlanSchema from "./schemas/plan.schema";
 import ProjectSchema from "./schemas/project.schema";
 import RequestSchema from "./schemas/request.schema";
@@ -26,4 +28,13 @@ const ContributorModel = model<ContributorInterface>(
   ContributorSchema
 );
 
-export { PlanModel, RequestModel, UserModel, ProjectModel, ContributorModel };
+const MapModel = model<MapInterface>(AppModelsEnum.MAP, MapSchema);
+
+export {
+  PlanModel,
+  RequestModel,
+  UserModel,
+  ProjectModel,
+  ContributorModel,
+  MapModel,
+};
