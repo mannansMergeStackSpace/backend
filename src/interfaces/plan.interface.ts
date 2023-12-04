@@ -3,4 +3,5 @@ export default interface PlanInterface {
   maximumProjects: number;
   maximumUsers: number;
   requestsPerMonth: number;
+  price: number;
 }

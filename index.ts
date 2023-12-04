@@ -3,13 +3,12 @@ import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import UserRouter from "@/routes/user.route";
+import MapRouter from "@/routes/map.route";
 
 const cors = require("cors");
 const corsOptions = {
-  origin: "http://localhost:3005", // Replace with your allowed origin
+  origin: "*", // Replace with your allowed origin
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials: true, // Include cookies
-  optionsSuccessStatus: 204, // Respond with a 204 status for preflight requests
 };
 
 dotenv.config();
@@ -23,6 +22,7 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 app.use("/users", UserRouter);
+app.use("/maps", MapRouter);
 
 mongoose.connect(mongoConnectionString);
 const db = mongoose.connection;

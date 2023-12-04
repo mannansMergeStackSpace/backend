@@ -8,7 +8,7 @@ const UserSchema = new Schema<UserInterface>(
     email: String,
     currentPlan: {
       type: Schema.Types.ObjectId,
-      ref: AppModelsEnum.USER,
+      ref: AppModelsEnum.PLAN,
     },
   },
   { timestamps: true }

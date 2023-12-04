@@ -36,7 +36,32 @@ const userAggregationPipeline = (id: string) => [
       as: "requests",
     },
   },
-  { $limit: 1 },
+  {
+    $lookup: {
+      from: "contributors",
+      localField: "projects._id",
+      foreignField: "projectId",
+      as: "contributors",
+    },
+  },
+  {
+    $lookup: {
+      from: "users",
+      localField: "contributors.contributorId",
+      foreignField: "_id",
+      as: "contributors",
+    },
+  },
+  {
+    $project: {
+      plan: {
+        $arrayElemAt: ["$plan", 0],
+      },
+      projects: 1,
+      contributors: 1,
+      requests: 1,
+    },
+  },
 ];
 
 export default {
